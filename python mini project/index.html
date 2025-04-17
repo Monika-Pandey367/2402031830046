@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Measurement Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Measurement Converter</h1>
+    <div class="converter">
+      <input type="number" id="value" placeholder="Enter value" />
+      <select id="from-unit">
+        <option value="cm">Centimeter (cm)</option>
+        <option value="m">Meter (m)</option>
+        <option value="km">Kilometer (km)</option>
+        <option value="inches">Inches (in)</option>
+        <option value="feet">Feet (ft)</option>
+      </select>
+      <span>to</span>
+      <select id="to-unit">
+        <option value="cm">Centimeter (cm)</option>
+        <option value="m">Meter (m)</option>
+        <option value="km">Kilometer (km)</option>
+        <option value="inches">Inches (in)</option>
+        <option value="feet">Feet (ft)</option>
+      </select>
+      <button onclick="convert()">Convert</button>
+      <div id="result"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
